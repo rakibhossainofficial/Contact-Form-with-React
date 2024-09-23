@@ -1,0 +1,21 @@
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    gap: .625rem;
+    border-radius: 5px;
+    border: none;
+
+}
+
+button:active{
+    background-color: #222222;
+}
+
+

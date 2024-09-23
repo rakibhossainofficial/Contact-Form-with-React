@@ -1,20 +1,24 @@
 import React from 'react'
-import styles from "./Navigation.module.css"
-// import "./ContactHeader.module.css"
+import styles from "./ContactHeader.module.css"
 
 const ContactHeader = () => {
-
-
     console.log(styles);
     
   return (
-    <div className='Container'>
+    <div className={`container ${styles.ContactHeader}`}>
+      <header>
 
-        <h1>CONTACT US</h1>
-        <p>LET’S CONNECT: WE’RE HERE TO HELP, AND WE’D LOVE TO HEAR FROM YOU! WHETHER YOU HAVE A QUESTION, COMMENT, OR JUST WANT TO CHAT , YOU CAN REACH OUT TO US THROUGH THE CONTACT FORM OF THIS PAGE, OR BY PHONE, EMAIL, OR SOCIAL MEDIA. </p>
-
+      <h1>CONTACT US</h1>
+      <p>
+        LET’S CONNECT: WE’RE HERE TO HELP, AND WE’D LOVE TO HEAR FROM YOU!
+        WHETHER YOU HAVE A QUESTION, COMMENT, OR JUST WANT TO CHAT , YOU CAN
+        REACH OUT TO US THROUGH THE CONTACT FORM OF THIS PAGE, OR BY PHONE,
+        EMAIL, OR SOCIAL MEDIA.{" "}
+      </p>
+      </header>
+      
     </div>
-  )
+  );
 }
 
 export default ContactHeader

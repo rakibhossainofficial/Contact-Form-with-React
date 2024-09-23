@@ -1,8 +1,13 @@
 import React from 'react'
-import "./Navigation.module.css"
+import styles from "./Navigation.module.css"
+
+
 const Navigation = () => {
+
+  console.log(styles);
+
   return (
-    <nav>
+    <nav className={`${styles.Navigation} container`}>
         <div className="logo">
             <img src="/Images/logo.png" alt="Logo" />
         </div>
