@@ -1,21 +1,37 @@
-button{
+.primary_btn{
+    padding: 18px 10px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1rem 1.5rem;
-    font-size: 1rem;
-    background-color: #000;
-    color: #fff;
+    gap: .5rem;
+    min-width: 220px;
+    font-size: 16px;
     cursor: pointer;
+    font-size: 16px;
     text-transform: uppercase;
-    gap: .625rem;
-    border-radius: 5px;
     border: none;
+    outline: none;
+}
+
+.primary_btn:active{
+    background-color: #111111;
 
 }
 
-button:active{
-    background-color: #222222;
+
+.outline.btn{
+    padding: 18px 10px;
+    border: 1px solid black;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    min-width: 220px;
+    font-size: 16px;
+    justify-content: center;
+
 }
-
-
