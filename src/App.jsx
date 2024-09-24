@@ -5,13 +5,14 @@ import ContactHeader from './Components/ContactHeader/ContactHeader'
 import ContactFrom from './Components/ContactForm/ContactFrom'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
       <Navigation />
-      <ContactHeader />
-      <ContactFrom />
+      <main className='main_container'> 
+        <ContactHeader />
+        <ContactFrom />
+      </main>
     </>
   )
 }

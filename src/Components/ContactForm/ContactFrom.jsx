@@ -15,12 +15,29 @@ const ContactFrom = () => {
           <Button text="VIA SUPPORT CHAT" icon={<MdMessage />} />
           <Button text="VIA Call" icon={<IoCall />} />
         </div>
-        <Button text="VIA Email For" icon={<MdEmail />} />
+        <Button isOutline={true} text="VIA Email For" icon={<MdEmail />} />
 
+        <form action="#">
+          <div className={styles.form_control}>
+            <label htmlFor="name">Name</label>
+            <input type="text" name="name" required />
+          </div>
+          <div className={styles.form_control}>
+            <label htmlFor="email">Email</label>
+            <input type="email" name="email" required />
+          </div>
+          <div className={styles.form_control}>
+            <label htmlFor="name">Text</label>
+            <textarea name="textarea" id=""></textarea>
+          </div>
+          <button>Submit</button>
+        </form>
+      </div>
+      <div className={styles.contact_image}>
+        <img src="./Images/contact.svg" alt="" />
       </div>
     </section>
   );
 }
-
 
 export default ContactFrom
